@@ -117,6 +117,8 @@ a {
   font-weight: 200;
   font-style: italic;
   color: var(--main-red);
+  text-align: center;
+  margin: 1rem 2rem; /* Add left/right margin for small screens */
 }
 
 .projects-section {
