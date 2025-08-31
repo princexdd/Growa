@@ -21,11 +21,13 @@ html {
     font-size: 60%;
   }
 }
+
 @media (max-width: 61.25em) {
   html {
     font-size: 58%;
   }
 }
+
 @media (max-width: 28.75em) {
   html {
     font-size: 55%;
@@ -112,13 +114,14 @@ a {
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-.welcome-section > p {
+.welcome-section>p {
   font-size: 3rem;
   font-weight: 200;
   font-style: italic;
   color: var(--main-red);
   text-align: center;
-  margin: 1rem 2rem; /* Add left/right margin for small screens */
+  margin: 1rem 2rem;
+  /* Add left/right margin for small screens */
 }
 
 .projects-section {
@@ -188,17 +191,17 @@ a {
   background: var(--main-gray);
 }
 
-.contact-section-header > h2 {
+.contact-section-header>h2 {
   font-size: 6rem;
 }
 
 @media (max-width: 28.75em) {
-  .contact-section-header > h2 {
+  .contact-section-header>h2 {
     font-size: 4rem;
   }
 }
 
-.contact-section-header > p {
+.contact-section-header>p {
   font-style: italic;
 }
 
@@ -230,7 +233,7 @@ footer {
   border-top: 4px solid var(--main-red);
 }
 
-footer > p {
+footer>p {
   margin: 2rem;
 }
 
@@ -259,12 +262,23 @@ footer i {
   padding-bottom: 1rem;
 }
 
+/* ✅ Logos Section (Updated) */
 .logos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  /* Laptop pe 4 */
   gap: 4rem;
   max-width: 1000px;
   margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Mobile pe 2-2 */
+  }
 }
 
 .logo-item {
@@ -277,7 +291,8 @@ footer i {
 .logo-img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
+  /* contain so logo shrink ho jaaye */
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
 }
@@ -309,10 +324,29 @@ footer i {
   margin: 0 auto;
   padding: 4rem 2rem;
 }
+
 .short-item video {
   width: 100%;
   aspect-ratio: 9 / 16;
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ✅ Posters Section */
+.posters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Laptop pe 2-2 */
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .posters-grid {
+    grid-template-columns: 1fr;
+    /* Mobile pe 1-1 */
+  }
 }
