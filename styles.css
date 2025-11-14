@@ -350,3 +350,8 @@ footer i {
     /* Mobile pe 1-1 */
   }
 }
+
+.contact-links .btn {
+  margin: 10px;
+  display: inline-block;
+}
