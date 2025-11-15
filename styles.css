@@ -66,14 +66,12 @@ a {
   color: var(--main-white);
 }
 
-/* =====================================================
-   NAVBAR UPDATED (LEFT LOGO + RIGHT MENU)
-   ===================================================== */
+
 
 .nav {
   display: flex;
   justify-content: space-between;
-  /* Left logo + right items */
+
   align-items: center;
   position: fixed;
   top: 0;
@@ -108,7 +106,7 @@ a {
   background: var(--main-blue);
 }
 
-/* MOBILE NAV FIX */
+
 @media (max-width: 28.75em) {
   .nav {
     justify-content: space-between;
@@ -116,9 +114,7 @@ a {
   }
 }
 
-/* =====================================================
-   HERO SECTION
-   ===================================================== */
+
 
 .welcome-section {
   display: flex;
@@ -140,9 +136,7 @@ a {
   margin: 1rem 2rem;
 }
 
-/* =====================================================
-   PROJECTS / THUMBNAILS SECTION
-   ===================================================== */
+
 
 .projects-section {
   text-align: center;
@@ -190,9 +184,7 @@ a {
   padding: 2rem 1rem;
 }
 
-/* =====================================================
-   CONTACT SECTION
-   ===================================================== */
+
 
 .contact-section {
   display: flex;
@@ -239,9 +231,7 @@ a {
   transform: translateY(8px);
 }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
+
 
 footer {
   font-weight: 300;
@@ -263,9 +253,6 @@ footer>p {
   }
 }
 
-/* =====================================================
-   LOGOS GRID
-   ===================================================== */
 
 .logos-section {
   text-align: center;
@@ -316,9 +303,6 @@ footer>p {
   transform: scale(1.05);
 }
 
-/* =====================================================
-   SHORTS SECTION
-   ===================================================== */
 
 .shorts-section {
   padding: 10rem 2rem;
@@ -352,9 +336,6 @@ footer>p {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* =====================================================
-   POSTERS SECTION
-   ===================================================== */
 
 .posters-grid {
   display: grid;
@@ -377,10 +358,10 @@ footer>p {
 
 .welcome-subtext {
   font-size: 1.4rem !important;
-  /* smaller */
+
   font-weight: 300 !important;
   font-style: normal !important;
-  /* remove italic */
+
   color: #ffffff !important;
   text-align: center;
   max-width: 800px;
@@ -400,4 +381,11 @@ footer>p {
     font-size: 1.6rem;
     padding: 1.2rem 0.8rem;
   }
+}
+
+.nav-logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 6px;
+  margin-top: 6px;
 }
