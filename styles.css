@@ -388,3 +388,16 @@ footer>p {
   line-height: 1.5;
   padding: 0 1rem;
 }
+
+@media (max-width: 480px) {
+  .nav-list {
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav-list a {
+    font-size: 1.6rem;
+    padding: 1.2rem 0.8rem;
+  }
+}
